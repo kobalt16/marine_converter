@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi:regular,500,600,700" rel="stylesheet" />
+    <title>marine converter</title>
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <h1>marine converter</h1>
+        </div>
+    </header>
+    <main>
+        <div class="main__container" id="app">
+            <div class="card">
+                <input type="number"
+                    v-bind:value="inputValue"
+                    v-on:input="result"
+                />
+            </div>
+            <h2> {{ inputValue }}kn = {{ inputValue * 1.8 }}km</h2>
+            <h3>{{ inputValue * 1852 }} m</h3>
+        </div>
+    </main>
+    
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

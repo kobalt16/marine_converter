@@ -1,0 +1,13 @@
+body {
+    font-family: 'Reem Kufi';
+}
+.header__container {
+    display: flex;
+    padding: 7px;
+    max-width: 1250px;
+    background-color: #D0DDFF;
+}
+h1 {
+    font-family: 'Reenie Beanie';
+    font-size: 86px;
+}
